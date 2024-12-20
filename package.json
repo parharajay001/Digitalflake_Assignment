@@ -1,0 +1,17 @@
+{
+  "name": "digital-flake",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:frontend": "yarn workspace frontend start",
+    "dev:backend": "yarn workspace backend dev",
+    "build:backend": "yarn workspace backend build",
+    "start": "concurrently \"yarn start:frontend\" \"yarn dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "lerna": "^7.0.0"
+  }
+}
