@@ -131,7 +131,7 @@ const City: React.FC = () => {
                   </TableSortLabel>
                 </TableCell>
                 <TableCell>
-                  <TableSortLabel active={orderBy === 'stateName'} direction={orderBy === 'stateName' ? orderDirection : 'asc'} onClick={() => handleSort('stateName')}>
+                  <TableSortLabel active={orderBy === 'state'} direction={orderBy === 'state' ? orderDirection : 'asc'} onClick={() => handleSort('state')}>
                     State Name
                   </TableSortLabel>
                 </TableCell>
